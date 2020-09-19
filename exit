@@ -1,0 +1,15 @@
+
+[1mFrom:[0m /home/ec2-user/environment/CARAVAN_3-8/app/views/blogs/index.html.erb:46 ActionView::CompiledTemplates#_app_views_blogs_index_html_erb___930728838146066131_70349621996480:
+
+    [1;34m41[0m:     <h2 class="blog-heading">Recent Blogs</h2>
+    [1;34m42[0m: 
+    [1;34m43[0m:     <div class="blog-box">
+    [1;34m44[0m:       <% @blogs.each do |blog| %>
+    [1;34m45[0m:       <% binding.pry %>
+ => [1;34m46[0m:         <div class="blog-item">
+    [1;34m47[0m:           <div class="blog-image"><%= image_tag("img/forest.jpg", class: "blog-image") %></div>
+    [1;34m48[0m:           <section class="blog-text">
+    [1;34m49[0m:             <h3 class="blog-text-headline"><%= link_to blog.title,blog_path(blog) %></h3>
+    [1;34m50[0m:             <p class="blog-date"><%= blog.created_at %></p>
+    [1;34m51[0m:             <span class="category"><%= blog.category %></span>
+
