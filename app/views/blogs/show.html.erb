@@ -2,7 +2,7 @@
   <h1 class="heading">
     <%= link_to "CARAVAN", blogs_path %>
   </h1>
-  <div class="social">  
+  <div class="social">
     <i class="fa fa-facebook-square"></i>
     <i class="fa fa-twitter-square"></i>
     <i class="fa fa-instagram"></i>
@@ -51,7 +51,7 @@
       <p class="single-text">
       <%= @blog.body %>
       </p>
-      <a href="#">編集</a>
+      <%= link_to "編集",edit_blog_path(@blog) %>
       <a href="#">削除</a>
       <div class="author-case">
         <div class="author-image"></div>
